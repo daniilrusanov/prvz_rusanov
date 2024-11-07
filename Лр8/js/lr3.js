@@ -42,5 +42,6 @@ function calculateMasterScholarship() {
     const master = new Master(name, averageScore, specialty, additionalScholarship);
     const scholarship = master.calculateScholarship();
 
-    document.getElementById("result").textContent = `${master.name} отримує стипендію: ${scholarship} грн`;
+    document.getElementById("result").textContent =
+    `${master.name} з середнім балом ${master.averageScore} та спеціальністю ${master.specialty} отримує стипендію: ${scholarship} грн`;
 }
