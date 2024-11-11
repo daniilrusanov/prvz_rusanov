@@ -1,0 +1,44 @@
+<section class="student-section-flex">
+    <aside>
+        <h1>Базовий клас</h1>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="studentName_bc">Ім'я студента:</label>
+            <input class="work-section-input" type="text" id="studentName_bc" placeholder="Введіть ім'я">
+        </div>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="averageScore_bc">Середній бал:</label>
+            <input class="work-section-input" type="number" id="averageScore_bc" step="0.1" placeholder="Введіть середній бал">
+        </div>
+
+        <button class="work-section-button" (click)="calculateStudentScholarship()">Розрахувати</button>
+
+        <div id="resultStudent" class=".work-section-result">
+            <p>{{ resultStudentMessage }}</p>
+          </div>
+    </aside>
+
+    <aside>
+        <h1>Клас нащадок</h1>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="studentName">Ім'я студента:</label>
+            <input class="work-section-input" type="text" id="studentName" placeholder="Введіть ім'я">
+        </div>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="averageScore">Середній бал:</label>
+            <input class="work-section-input" type="number" id="averageScore" step="0.1" placeholder="Введіть середній бал">
+        </div>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="masterSpecialty">Спеціальність магістра:</label>
+            <input class="work-section-input" type="text" id="masterSpecialty" placeholder="Введіть спеціальність">
+        </div>
+        <div class="work-section-input-group">
+            <label class="work-section-label" for="additionalScholarship">Додаткова стипендія (грн):</label>
+            <input class="work-section-input" type="number" id="additionalScholarship" step="100" placeholder="Введіть додаткову стипендію">
+        </div>
+        <button class="work-section-button" (click)="calculateMasterScholarship()">Розрахувати</button>
+
+        <div id="resultMaster" class=".work-section-result">
+            <p>{{ resultMasterMessage }}</p>
+          </div>
+    </aside>
+</section>
