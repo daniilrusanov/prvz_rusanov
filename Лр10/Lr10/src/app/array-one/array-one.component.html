@@ -1,0 +1,28 @@
+<section class="flex">
+    <h2>Завдання одновимірний масив</h2>
+    <p>
+        Знайти суму всіх елементів масиву дійсних чисел, більших за дане число.<br>
+        Розмірність масиву - 20. Заповнення масиву здійснити випадковими числами<br>
+        від 50 до 100.
+    </p>
+    <div class="flex">
+        <input type="number" min="50" max="100" placeholder="Введіть число: " #N />
+        <button class="work-button" (click)="calculate(N.value)">
+            Розрахувати</button>
+    </div>
+</section>
+<section class="flex purple">
+    <h2>Одновимірний масив</h2>
+    <div class="flex flex-row flex-wrap">
+        <div *ngFor="let aa of arrayOne.a" class="array-item">
+            <p>{{ aa }}</p>
+        </div>
+    </div>
+
+    <h2>Результати обрахунку</h2>
+    <div class="flex flex-row flex-wrap">
+        <div class="result">
+            <p>Сума - {{ arrayOne.sum }}</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(238, 234, 248);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5),
+        inset 0px 2px 2px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.5s linear 1 forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #737d05, #2b0cf7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #0B132A;
+    padding-bottom: 10px;
+}

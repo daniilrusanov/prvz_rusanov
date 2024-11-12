@@ -1,0 +1,33 @@
+<section class="flex">
+    <h2>Завдання двовимірний масив</h2>
+    <p>
+        Дано дійсний масив розмірністю n * m, в якому не всі елементи дорівнюють<br>
+        нулю. Отримати новий масив шляхом ділення всіх елементів даного масиву на<br>
+        його найбільший за модулем елемент.
+    </p>
+
+    <div class="flex">
+        <input type="number" min="0" max="100" placeholder="Введіть число N: " #N />
+        <input type="number" min="0" max="100" placeholder="Введіть число M: " #M />
+        <button class="work-button" (click)="calculate(N.value, M.value)">
+            Розрахувати</button>
+    </div>
+</section>
+<section class="flex purple">
+    <h2>Двовимірний масив</h2>
+    <div class="flex flex-row flex-wrap array-item">
+        <div *ngFor="let row of arrayTwo.a">
+            <div *ngFor="let aa of row" class="array-element">
+                <p>{{ aa }}</p>
+            </div>
+        </div>
+    </div>
+    <h2>Результати обрахунку</h2>
+    <div class="flex flex-row flex-wrap" class="array-item">
+        <div *ngFor="let rowRes of arrayTwo.res">
+            <div *ngFor="let aaRes of rowRes" class="array-element">
+                <p>{{ aaRes }}</p>
+            </div>
+        </div>
+    </div>
+</section>
