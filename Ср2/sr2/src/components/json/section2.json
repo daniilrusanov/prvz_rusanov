@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "h2": "Новинка року!",
+        "image": "img/first_extra_image.jpg"
+    },
+    {
+        "id": 2,
+        "h2": "Новинка тижня!",
+        "image": "img/second_extra_image.jpg"
+    }
+]
